@@ -1,0 +1,25 @@
+# java
+export JAVA_HOME="/c/Users/rhjha/Desktop/data-engineering-zoomcamp/batch/spark/jdk-11.0.21"
+export PATH="${JAVA_HOME}/bin:${PATH}"
+
+# hadoop
+export HADOOP_HOME="/c/Users/rhjha/Desktop/data-engineering-zoomcamp/batch/spark/hadoop-3.3.5"
+export PATH="${HADOOP_HOME}/bin:${PATH}"
+
+# spark
+export SPARK_HOME="/c/Users/rhjha/Desktop/data-engineering-zoomcamp/batch/spark/spark-3.5.1-bin-hadoop3"
+export PATH="${SPARK_HOME}/bin:${PATH}"
+
+# pyspark
+export PYTHONPATH="${SPARK_HOME}/python/:$PYTHONPATH"
+export PYTHONPATH="${SPARK_HOME}/python/lib/py4j-0.10.9.7-src.zip:$PYTHONPATH"
+
+types.StructType([
+    types.StructField('hvfhs_license_num', types.StringType(), True),
+    types.StructField('dispatching_base_num', types.StringType(), True),
+    types.StructField('pickup_datetime', types.TimestampType(), True),
+    types.StructField('dropoff_datetime', types.TimestampType(), True),
+    types.StructField('PULocationID', types.IntegerType(), True),
+    types.StructField('DOLocationID', types.IntegerType(), True),
+    types.StructField('SR_Flag', types.StringType(), True)
+])
